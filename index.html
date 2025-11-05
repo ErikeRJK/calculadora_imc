@@ -3,12 +3,32 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css" integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
     <title>Calculadora IMC</title>
 </head>
 <body>
-
-
-    
+    <div class="w-full h-screen bg-[#18171C] flex text-white">
+        <div class="w-[40%] h-full  flex items-center justify-center">
+            <img src="images/fitness-tracker-animate.svg" alt="imagem animada, onde dois homens lutam boxe" width="800px">
+        </div>
+        <div class="w-1/2 h-full flex items-center justify-center">
+            <div class="w-[650px] h-auto min-h-[200px] bg-[#262626] rounded-2xl p-[20px]">
+                <div class="w-full flex flex-col">
+                    <h1 class="text-[28px] font-bold">Calculadora - IMC</h1>
+                    <div class="w-[180px] h-[5px] bg-[#FF725E] rounded-[10px] rounded-[10px]"></div>
+                </div>
+                <div class="w-full flex flex-col pt-[20px]">
+                    <div class="w-full flex flex-col ">
+                        <label for="Peso" class="font-bold text-[18px] text-[#CBD4E2]">Peso em kg</label>
+                        <div class="relative w-full pt-[5px]">
+                            <input type="text" class="w-full h-[40px] bg-[#3F3F47] rounded-[10px] pl-[55px]">
+                            <i class="fa-solid fa-weight-hanging text-[#CBD4E2] absolute left-[10px] top-[15px] text-[20px]"></i>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
 </body>
 </html>
