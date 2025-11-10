@@ -18,14 +18,24 @@
                     <h1 class="text-[28px] font-bold">Calculadora - IMC</h1>
                     <div class="w-[180px] h-[5px] bg-[#FF725E] rounded-[10px] rounded-[10px]"></div>
                 </div>
-                <div class="w-full flex flex-col pt-[20px]">
+                <div class="w-full flex flex-col pt-[20px] gap-[25px]">
                     <div class="w-full flex flex-col ">
-                        <label for="Peso" class="font-bold text-[18px] text-[#CBD4E2]">Peso em kg</label>
+                        <label for="Peso" class="font-bold text-[18px] text-[#CBD4E2]">Peso em kg:</label>
                         <div class="relative w-full pt-[5px]">
-                            <input type="text" class="w-full h-[40px] bg-[#3F3F47] rounded-[10px] pl-[55px]">
+                            <input type="text" maxlength="3" class="w-full h-[40px] bg-[#3F3F47] rounded-[10px] pl-[55px]">
                             <i class="fa-solid fa-weight-hanging text-[#CBD4E2] absolute left-[10px] top-[15px] text-[20px]"></i>
+                            <p class="text-[CBD4E2] absolute right-[15px] top-[12px] " >kg</p>
                         </div>
                     </div>
+                    <div class="w-full flex flex-col ">
+                        <label for="altura" class="font-bold text-[18px] text-[#CBD4E2]">Altura em cm:</label>
+                        <div class="relative w-full pt-[5px]">
+                            <input type="number" max="250" class="w-full h-[40px] bg-[#3F3F47] rounded-[10px] pl-[55px] pr-[45px]">
+                            <i class="fa-solid fa-ruler text-[#CBD4E2] absolute left-[10px] top-[15px] text-[20px]"></i>
+                            <p class="text-[CBD4E2] absolute right-[15px] top-[12px] " >cm</p>
+                        </div>
+                    </div>
+                    <button class="">Calcular IMC</button>
                 </div>
             </div>
         </div>
