@@ -22,7 +22,7 @@
                     <div class="w-full flex flex-col ">
                         <label for="Peso" class="font-bold text-[18px] text-[#CBD4E2]">Peso em kg:</label>
                         <div class="relative w-full pt-[5px]">
-                            <input type="text" maxlength="3" class="w-full h-[40px] bg-[#3F3F47] rounded-[10px] pl-[55px] outline-none focus:border focus:border-[#FF725E]">
+                            <input id="peso" type="text" maxlength="3" class="w-full h-[40px] bg-[#3F3F47] rounded-[10px] pl-[55px] outline-none focus:border focus:border-[#FF725E]">
                             <i class="fa-solid fa-weight-hanging text-[#CBD4E2] absolute left-[10px] top-[15px] text-[20px]"></i>
                             <p class="text-[CBD4E2] absolute right-[15px] top-[12px] " >kg</p>
                         </div>
@@ -30,23 +30,23 @@
                     <div class="w-full flex flex-col ">
                         <label for="altura" class="font-bold text-[18px] text-[#CBD4E2]">Altura em cm:</label>
                         <div class="relative w-full pt-[5px]">
-                            <input type="number" max="250" class="w-full h-[40px] bg-[#3F3F47] rounded-[10px] pl-[55px] pr-[45px] outline-none focus:border focus:border-[#FF725E]">
+                            <input id="altura" max="250" class="w-full h-[40px] bg-[#3F3F47] rounded-[10px] pl-[55px] pr-[45px] outline-none focus:border focus:border-[#FF725E]">
                             <i class="fa-solid fa-ruler text-[#CBD4E2] absolute left-[10px] top-[15px] text-[20px]"></i>
                             <p class="text-[CBD4E2] absolute right-[15px] top-[12px] " >cm</p>
                         </div>
                     </div>
-                    <button class="w-full bg-[#FF725E] h-[45px] rounded-[10px] font-bold text-[18px] cursor-pointer hover:bg-transparent hover:text-[#FF725E] border border-[#FF725E] hover:transition-all duration-300 ease-in-out">Calcular IMC</button>
+                    <button id="btn" class="w-full bg-[#FF725E] h-[45px] rounded-[10px] font-bold text-[18px] cursor-pointer hover:bg-transparent hover:text-[#FF725E] border border-[#FF725E] hover:transition-all duration-300 ease-in-out">Calcular IMC</button>
 
-                    <div class="flex flex-col gap-[25px]" id="resultado">
+                    <div class="flex flex-col gap-[25px] hidden" id="resultado">
                         <div class="w-full h-[2px] bg-[#3F3F47]"></div>
 
                         <div class="w-full flex">
                             <div class="w-[30%] h-[100px] flex flex-col items-center justify-center">
-                                <span class="text-[#FF725E] text-[40px]"> 28.1</span>
+                                <span id="res-imc" class="text-[#FF725E] text-[40px]"> </span>
                                 <p>Seu IMC</p>
                             </div>
                             <div class="w-[70%] h-[100px] flex items-center justify-center">
-                                <span class="text-[18px] text-center">Você está no peso ideal</span>
+                                <span id="res-msg" class="text-[18px] text-center"> </span>
                             </div>
                         </div>
                         <div class="w-full h-[2px] bg-[#3F3F47]"></div>
@@ -55,5 +55,6 @@
             </div>
         </div>
     </div>
+    <script src="./script.js"></script>
 </body>
 </html>
